@@ -1,0 +1,17 @@
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 4rem 0;
+  align-self: self-start;
+}
+
+@media (max-width: 800px) {
+  .list {
+    padding: 2rem 0 0;
+  }
+}
+
+

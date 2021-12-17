@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  color: grey;
+  margin: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease-in;
+}
+
+.link:hover, .link:active, .active {
+  cursor: pointer;
+  color: black;
+}
+
+@media (max-width: 360px) {
+  .link {
+    margin: 0.5rem;
+  }
+}

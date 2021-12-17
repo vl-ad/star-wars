@@ -1,0 +1,11 @@
+.star {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url("./img/star.svg");
+  background-size: contain;
+}
+
+.star:hover, .active {
+  cursor: pointer;
+  background: url("./img/star_active.svg");
+}

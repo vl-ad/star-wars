@@ -1,0 +1,87 @@
+.container {
+  position: relative;
+  box-shadow: 0 0.5rem 1rem 1px grey;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 0.5rem;
+  height: 17rem;
+  width: 25rem;
+  transition: box-shadow 0.1s ease-in-out;
+  padding: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.container:hover {
+  box-shadow: 0 1rem 2rem 1px grey;
+}
+
+.container.full {
+  position: absolute;
+  inset: 0;
+  width: auto;
+  height: auto;
+  z-index: 2;
+  background: white;
+  padding: 3rem;
+}
+
+.container.full .card {
+  justify-content: center;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card li {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.container:not(.full) .list {
+  max-width: 200px;
+}
+
+.img {
+  width: 150px;
+}
+
+.container.full .img {
+  width: auto;
+  height: 70%;
+  margin-right: 3rem;
+}
+
+@media (max-width: 1400px) {
+  .container .card {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container.full .img {
+    width: 70%;
+    height: auto;
+    margin: 0 0 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}

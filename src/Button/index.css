@@ -1,0 +1,20 @@
+.button {
+  display: inline-block;;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid gray;
+  color: #222222;
+  text-align: center;
+}
+
+.button:hover {
+  cursor: pointer;
+  border-color: black;
+  background: #f7f7f7;
+}
+
+.disabled {
+  background: #f7f7f7;
+  cursor: auto;
+}

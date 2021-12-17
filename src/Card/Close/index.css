@@ -1,0 +1,7 @@
+.close {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url("./img/cross.svg") no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}

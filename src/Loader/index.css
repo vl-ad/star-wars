@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full {
+  width: 100%;
+}
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.loader {
+  margin: 3rem auto;
+  position: relative;
+  border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  border-left: 0.5rem solid black;
+  transform: translateZ(0);
+  animation: loading 1s infinite linear;
+}
+
+.small {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.small .loader {
+  border: 0.2rem solid rgba(255, 255, 255, 0.2);
+  border-left: 0.2rem solid black;
+  margin:  0 0 0 0.5rem;
+}
+
+.small > div {
+  width: 1rem;
+  height: 1rem;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
