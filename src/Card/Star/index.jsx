@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-import { withRouter } from 'react-router-dom';
 
 import FavouritesContext from '@contexts/favourites';
 
@@ -44,4 +43,4 @@ CardStar.propTypes = {
   }).isRequired,
 };
 
-export default withRouter(CardStar);
+export default CardStar;
