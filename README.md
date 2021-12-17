@@ -6,5 +6,5 @@ To check the code for compliance with the eslint rules you can execute `npm run 
 This will list syntax errors, if any.
 
 Also, you can test the application with Playwright. To do this, execute the `npm run test` or `yarn test` command.
-It will run e2e tests in Chromium. To rin a separate test execute `yarn test tests/favourites.spec.js`
+It will run e2e tests in Chromium. To run a separate test execute `yarn test tests/favourites.spec.js`
 or `npm run test tests/favourites.spec.js` command.
